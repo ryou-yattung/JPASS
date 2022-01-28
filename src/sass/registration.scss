@@ -1,0 +1,59 @@
+@import "ress"; 
+@import "_common";
+@import "_vars";
+
+body{
+     width: 100vw;
+     height: 100vh;
+     background-color: $bgClour;
+
+     header{
+          @include header;
+
+          .back{
+              @include back;
+          }
+     }
+
+     main{
+         @include main;
+
+         .wrap{
+          width: 75%;
+          height: 80%;
+          position: absolute;
+          bottom: 40px;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+          text-align: center;
+
+          p{
+               width: 100%;
+               height: 50px;
+               background-color: $fontClour;
+               border-radius: 50px;
+               margin-bottom: 30px; 
+               
+               input{
+                    width: 90%;
+                    height: 100%;
+                    border: none;
+               }
+          }
+
+          &_btn{
+               position: absolute;
+               bottom: 40px;
+               right: 0;
+               left: 0;
+               margin: 0 auto;
+               @include btn;
+          
+               a{
+                    background-color: $resistClour;
+               }           
+          }
+         }
+     }
+}

@@ -1,0 +1,29 @@
+doctype html
+html(lang="ja")
+     head
+          include _html3_01_head.pug
+          link(rel="stylesheet" href="css/registration.css")
+          title 登録
+
+     body 
+          include _header.pug
+
+          main 
+               .wrap
+                    form(action="") 
+                         p 
+                              input(type="text" placeholder="ユーザーネームを入力")
+                         p 
+                              input(type="text" placeholder="メールアドレスを入力")
+                         p 
+                              input(type="password" placeholder="パスワードを入力")
+                              //- <i class="fas fa-eye fa-2x toggle-password"></i>
+
+                         .wrap_btn
+                              a(href="homepage.html") アカウントを新規作成 
+
+          include _jquery.pug
+          script(src="js/registreation.js")  
+
+                    
+

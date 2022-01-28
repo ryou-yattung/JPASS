@@ -1,0 +1,78 @@
+@import "ress"; 
+@import "_common";
+@import "_vars";
+
+body{
+     @include tsl_body;
+
+     header{
+          @include tsl_header;
+          background: $bgClour;
+     }
+
+     footer{
+          @include tsl_footer;
+     }
+
+     main{
+          @include tsl_main;
+
+          .wrap{
+               width: 100%;
+               height: auto;
+               margin-bottom: 10vh;
+
+               &_test{
+                    width: 90%;
+                    height: 40%;
+                    position: relative;
+                    margin: 25px auto;
+                    box-shadow: 3px 3px 10px 1px rgb(176, 176, 176);
+
+                    &_bg{
+                         padding: 30px;
+
+                         &_no{
+                              width: 25px;
+                              height: 25px;
+                              position: absolute;
+                              border: 2px solid #707070;
+                              color: #707070;
+                              text-align: center;
+                         }
+
+                         &_title{
+                              padding: 30px;
+                              font-size: 1.4rem;
+                              // background-color: yellowgreen;
+                         }
+
+                         &_question{
+                              padding: 0 30px;
+                              // background-color: antiquewhite;
+
+                              p{
+                                   width: 90%;
+                                   height: 30px;
+                                   font-size: 1.4rem;
+                                   line-height: 30px;
+                                   margin: 10px auto;
+                                   text-align: center;
+                                   border: 1px solid #707070;
+
+
+                                   &:hover{
+                                        background: red;
+                                        color: white;
+                                   }
+
+                                   &:nth-child(3):hover{
+                                        background: $bgClour;
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}

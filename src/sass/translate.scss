@@ -1,0 +1,81 @@
+@import "ress"; 
+@import "_common";
+@import "_vars";
+
+body{
+     @include tsl_body;
+
+     header{
+          @include tsl_header;
+     }
+
+     footer{
+          @include tsl_footer;
+
+          .plue i{ 
+             color: #FF8A00;  
+          }
+     }
+
+     main{
+          @include tsl_main;
+
+          h2{
+               width: 100%;
+               color: $fontClour_h;
+               border-bottom: 1px solid $fontClour_h;
+               padding: 20px 0 5px;
+               margin-bottom: 13px;
+          }   
+          
+          h3{
+               font-size: 4rem;
+               color: #FF8A00;
+               margin-bottom: 5px;
+               padding-left: 30px;
+          }   
+          
+          h4{
+               font-size: 1.6rem;
+               color: white;
+               padding-top: 10px;
+               padding-left: 30px;
+          }
+          
+          .wrap {
+               width: 100%;
+               height: 900px;
+          
+               &_jan{
+                    width: 100%;
+                    height: 50%;
+                    overflow: hidden;
+
+                    &_translate{
+                         width: 100%;
+                         height: 30%;
+                      
+                         p{
+                              font-size: 1.4rem;
+                              padding-left: 30px;
+                              color: $fontClour_h;
+                              line-height: 25px;
+                         }
+                    }
+
+                    &_sample {
+                         width: 100%;
+                         height: 70%;
+                         background-color: $loginClour;
+
+                         p{
+                              font-size: 1.4rem;
+                              padding-left: 30px;
+                              margin-top: 20px;
+                              color: white;
+                         }
+                    }
+               }
+          }
+     }
+}

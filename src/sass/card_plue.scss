@@ -1,0 +1,89 @@
+@import "ress"; 
+@import "_common";
+@import "_vars";
+
+body{
+     @include tsl_body;
+
+     header{
+          @include tsl_header;
+          background: $resistClour;
+     }
+
+     footer{
+          @include tsl_footer;
+
+          .card i{
+               color: $resistClour; 
+          }
+     }
+
+     main{
+          @include tsl_main;
+          position: relative;
+
+          .wrap{
+               width: 100%;
+               height: auto;
+               margin-bottom: 10vh;
+
+               &_title{
+                    width: 250px;
+                    height: 43px;
+                    position: relative;
+                    display: flex;
+                    margin: 20px auto;
+                    border-radius: 50px;
+                    box-shadow: 3px 3px 5px 1px rgb(201, 201, 201);
+
+                    &_both{
+                         width: 50%;
+                         height: 100%;
+                         text-align: center;
+                         line-height: 40px;
+                         border-radius: 50px;
+                         
+                    }
+               }
+
+               &_input{
+                    width: 80%;
+                    height: auto;
+                    margin: 50px auto 0;
+
+                    p{
+                         font-size: 2rem;
+                         margin-bottom: 20px;
+                    }
+
+                    &_bg{
+                         width: 100%;
+                         height: auto;
+                         margin-bottom: 50px;
+
+                         input{
+                              width: 100%;
+                              height: 100px;
+                              border: 2px solid $fontClour_h;
+                         }
+                    }
+
+                    &_conf{
+                         width: 100%;
+                         height: 40px;
+                         text-align: center;
+                         line-height: 40px;
+
+                         a{
+                              width: 100%;
+                              height: 100%;
+                              display: block;
+                              background-color: $resistClour;
+                              color: white;
+                              text-decoration: none;
+                         }
+                    }
+               }
+          }
+     }
+}

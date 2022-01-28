@@ -1,0 +1,128 @@
+$bgClour : #1D5699;
+$fontClour : #fff;
+$fontClour_h : #707070;
+$resistClour : #1BC7C9;
+$loginClour : #FF8A00;
+
+//index/login/registration
+     //index
+          @mixin header{
+               width: 100vw;
+               height: 35vh;
+               background-color: white;
+               position: relative;
+
+               img{
+                    width: 98px;
+                    height: 105px;
+                    position: absolute;
+                    top: 0;
+                    bottom: -50px;
+                    right: 0;
+                    left: 0;
+                    margin: auto;
+               }
+          }
+
+          @mixin main {
+               width: 100vw;
+               height: 65vh;
+               position: relative;
+               background-color: #1D5699;
+          }
+
+          @mixin btn {
+               width: 100%;
+               height: 50px;
+
+                    a{
+                         display: block;
+                         width: 100%;
+                         height: 100%;
+                         border-radius: 50px;
+                         font-size: 2rem;
+                         line-height: 47px;
+                         text-decoration: none;
+                         color: white;
+
+                         &:hover, &:visited{
+                              color: white;
+                         }
+                    }
+          }
+
+
+     //header back
+          @mixin back{
+               position: absolute;
+               width: 30px;
+               height: 30px;
+               top: 30px;
+               left: 30px;
+          }
+
+
+
+// translate
+     //body
+          @mixin tsl_body {
+               width: 100vw;
+               height: 100vh;
+               position: relative;
+          }
+
+          @mixin tsl_header {
+               width: 100%;
+               height: 5vh;
+               position: absolute;
+               top: 0;
+               z-index: 10;
+               background-color: $loginClour;
+     
+                    h1{
+                         text-align: center;
+                         line-height: 5vh;
+                         color: $fontClour;
+                    }
+          }
+
+          @mixin tsl_footer {
+               width: 100%;
+               height: 5vh;
+               position: absolute;
+               bottom: 0;
+               z-index: 10;
+               background-color: white;
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+               box-shadow: 0px 5px 9px rgba(0, 0, 0, .5);
+
+               .list{
+                    width: 30%;
+                    height: 80%;
+                    text-align: center;
+                    line-height: 5vh;
+
+                    a{
+                         width: 100%;
+                         height: 100%;
+                         display: block;
+
+                         &:hover, &:visited{
+                              color: $fontClour_h;
+                         } 
+                    }
+               }
+          }
+
+          @mixin tsl_main {
+               width: 100%;
+               height: 100vh;
+               overflow:scroll;
+               padding-top: 5vh;
+          }
+
+
+
+

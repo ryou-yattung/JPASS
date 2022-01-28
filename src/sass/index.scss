@@ -1,0 +1,71 @@
+@import "ress"; 
+@import "_common";
+@import "_vars";
+
+body{
+     width: 100vw;
+     height: 100vh;
+     background-color: $bgClour;
+
+     header{
+          @include header;
+
+          .back{
+               display: none;
+          }
+     }
+
+     main{
+         @include main;
+
+         .font{
+              text-align: center;
+              color: $fontClour;
+              padding-top: 15px;
+
+              h2{
+                   font-size: 4rem;
+              }
+
+              p{
+                   font-size: 1.3rem;
+              }
+         }
+     }
+
+     .acc{
+          width: 75%;
+          height: 190px;
+          position: absolute;
+          bottom: 40px;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+          text-align: center;
+
+          &_registration{
+               @include btn;
+
+               a{
+                    background-color: $resistClour;
+               }
+          }
+
+          p{
+               position: relative;
+               padding-top: 50px;
+               margin-bottom: 15px;
+               color: $fontClour;
+               font-size: 1.5rem;
+               border-bottom: 1px solid $fontClour;
+          }
+
+          &_login{
+               @include btn;
+
+               a{
+                    background-color: $loginClour;
+               }
+          }
+     }
+}
